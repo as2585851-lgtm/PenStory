@@ -567,4 +567,262 @@ body {
     .student-actions {
         flex-direction: column;
     }
+
+}
+/* MOBILE FIXES & IMPROVEMENTS */
+@media (max-width: 768px) {
+    /* Navigation Mobile Fix */
+    .nav-container {
+        padding: 0.8rem 1rem;
+        flex-wrap: wrap;
+    }
+    
+    .nav-logo {
+        font-size: 1.2rem;
+    }
+    
+    .nav-menu {
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 0.5rem;
+    }
+    
+    .nav-link {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+    
+    /* Hero Section Mobile Fix */
+    .hero {
+        padding: 100px 1rem 50px !important;
+    }
+    
+    .hero h1 {
+        font-size: 2rem !important;
+        line-height: 1.3 !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .hero p {
+        font-size: 1rem !important;
+        margin-bottom: 2rem !important;
+        padding: 0 0.5rem;
+    }
+    
+    /* Container & Section Mobile Fix */
+    .container {
+        padding: 0 1rem !important;
+    }
+    
+    .section {
+        padding: 50px 0 !important;
+    }
+    
+    .section-title {
+        font-size: 1.8rem !important;
+        margin-bottom: 0.8rem !important;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem !important;
+        padding: 0 1rem;
+    }
+    
+    /* Card Grid Mobile Fix */
+    .students-grid,
+    .biodata-grid,
+    .features-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+        margin-top: 2rem !important;
+    }
+    
+    .student-card,
+    .feature-card {
+        margin: 0 auto !important;
+        max-width: 100% !important;
+        padding: 1.5rem !important;
+    }
+    
+    /* Button Mobile Fix */
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+        padding: 12px 24px;
+        text-align: center;
+    }
+    
+    /* Student Actions Mobile Fix */
+    .student-actions {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    
+    .student-actions .btn {
+        width: 100%;
+        margin: 0 !important;
+    }
+    
+    /* Writing Content Mobile Fix */
+    .writing-container {
+        margin: 80px auto 0 !important;
+        padding: 1rem !important;
+    }
+    
+    .writing-card {
+        margin: 0 !important;
+        border-radius: 12px !important;
+    }
+    
+    .writing-header {
+        padding: 2rem 1.5rem 1.5rem !important;
+    }
+    
+    .writing-title {
+        font-size: 1.8rem !important;
+        line-height: 1.3 !important;
+    }
+    
+    .writing-body {
+        padding: 1.5rem !important;
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+    }
+    
+    .writing-body p {
+        text-align: left !important;
+        margin-bottom: 1.2rem !important;
+    }
+    
+    /* Detail Items Mobile Fix */
+    .detail-item {
+        flex-direction: column;
+        gap: 0.3rem;
+        padding: 0.8rem;
+    }
+    
+    .detail-item strong {
+        min-width: auto;
+        font-size: 0.9rem;
+    }
+    
+    /* Filter Buttons Mobile Fix */
+    .filter-buttons {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    
+    .filter-buttons .btn {
+        flex: 1;
+        min-width: 120px;
+        font-size: 0.8rem;
+        padding: 8px 12px;
+    }
+    
+    /* Footer Mobile Fix */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .footer-section {
+        padding: 0 1rem;
+    }
+}
+
+/* EXTRA SMALL DEVICES (Phones) */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8rem !important;
+    }
+    
+    .hero p {
+        font-size: 0.95rem !important;
+    }
+    
+    .section-title {
+        font-size: 1.6rem !important;
+    }
+    
+    .student-header {
+        padding: 1.5rem 1rem 1rem !important;
+    }
+    
+    .student-details {
+        padding: 1rem !important;
+    }
+    
+    .writing-header {
+        padding: 1.5rem 1rem 1rem !important;
+    }
+    
+    .writing-body {
+        padding: 1rem !important;
+    }
+    
+    /* Fix text alignment for very small screens */
+    .hero-content,
+    .section-header {
+        text-align: center !important;
+    }
+}
+
+/* SPECIFIC FIXES FOR LAYOUT ISSUES */
+.students-grid,
+.biodata-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    width: 100%;
+}
+
+/* Ensure proper spacing */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Fix image and content alignment */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ensure text doesn't overflow */
+p, h1, h2, h3, h4, h5, h6 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Center align mobile content */
+@media (max-width: 768px) {
+    .hero-content,
+    .section-header,
+    .writing-header {
+        text-align: center;
+    }
+    
+    /* Remove any horizontal scrolling */
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    
+    /* Ensure containers don't cause overflow */
+    .container,
+    .writing-container {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
 }
